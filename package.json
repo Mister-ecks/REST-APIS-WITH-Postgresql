@@ -1,0 +1,35 @@
+{
+  "name": "risevest",
+  "version": "1.0.0",
+  "main": "startup.js",
+  "author": "Omosaku Emmanuel",
+  "license": "MIT",
+  "scripts": {
+    "start": "node startup.js",
+    "dev": "nodemon startup.js",
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "postgres": "^1.0.2",
+    "sequelize": "^6.16.1"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}
